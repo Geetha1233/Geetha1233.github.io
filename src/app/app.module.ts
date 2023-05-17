@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,RouterModule
+    LoginComponent
   ],
   imports: [
     BrowserModule,
