@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-login></app-login>";
+    __webpack_exports__["default"] = "";
     /***/
   },
 
@@ -736,8 +736,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
 
-    var routes = [];
+
+    var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./login/login.component */
+    "./src/app/login/login.component.ts");
+
+    var routes = [{
+      path: '/login',
+      component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"]
+    }, {
+      path: "",
+      pathMatch: "full",
+      redirectTo: "/login"
+    }];
 
     var AppRoutingModule = /*#__PURE__*/_createClass(function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
@@ -881,13 +894,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _login_login_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./login/login.component */
     "./src/app/login/login.component.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
     });
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_6__["LoginComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_6__["LoginComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
